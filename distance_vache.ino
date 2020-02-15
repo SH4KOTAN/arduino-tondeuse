@@ -1,7 +1,7 @@
 int distance(int pin){
-  /*digitalWrite(trig, HIGH);
+  digitalWrite(trig, HIGH);
   delayMicroseconds(10);
-  digitalWrite(trig, LOW);*/
+  digitalWrite(trig, LOW);
   lecture_echo = pulseIn(echo, HIGH);
   cm = lecture_echo / 58;
 
