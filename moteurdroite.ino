@@ -1,4 +1,4 @@
-void moteurdroite(int tensionAimantGauche, int tensionAimantDroit) {
+void moteurdroite(float tensionAimantGauche, float tensionAimantDroit) {
 
   if ((cm < 20) or (cm1 < 20) or (switchState == HIGH) or (2600>tensionAimantDroit>2400)) { //  ou aimant1  or (2600>voltage>2400)
     // analogWrite(M1PWM, vitesse);

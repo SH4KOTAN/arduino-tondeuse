@@ -1,4 +1,4 @@
-int getTensionAimant(int pin)
+float getTensionAimant(int pin)
 {      
     // Mesure du voltage...
     int rawValue = analogRead(pin);

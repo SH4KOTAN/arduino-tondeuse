@@ -12,11 +12,11 @@ long cm;
 long cm1;
 long cm2;
 
-int sensorPin = A5; // pin analogique aimant
-int sensorValue = 0;   // variable to store the value coming from the sensor
+int pinAimantDroit = A5; // pin analogique aimant
+//int sensorValue = 0;   // variable to store the value coming from the sensor
 
-int sensorPin2 = A4; // pin analogique aimant
-int sensorValue2 = 0;   // variable to store the value coming from the sensor
+int pinAimantGauche = A4; // pin analogique aimant
+//int sensorValue2 = 0;   // variable to store the value coming from the sensor
 
 int M1DIR = 4; // direction du moteur 1= broche 4
 int M1PWM = 5; // commande PWM du moteur 1= broche 5
@@ -78,8 +78,10 @@ void loop() {
   switchbouton();
   moteurbras ();
   moteurlame ();
+  
   // calcule tension aimants
-  int tensionDroite = getTensionAimant(sensorPin);
+  //float tensionGauche = getTensionAimant(pinAimantGauche);
+  float tensionDroite = getTensionAimant(pinAimantDroit);
 
   //
   moteurgauche();
