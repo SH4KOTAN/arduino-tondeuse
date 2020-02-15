@@ -1,4 +1,5 @@
-int distance(int pin){
+int distance(int pin)
+{
   digitalWrite(trig, HIGH);
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
@@ -7,20 +8,20 @@ int distance(int pin){
 
   delay(10);
   Serial.print("Distance en cm :");
-    Serial.println(cm);
+  Serial.println(cm);
 }
 
-int distance1 (){
-digitalWrite(trig1, HIGH);
-delayMicroseconds(10);
-digitalWrite(trig1, LOW);
-lecture_echo1 = pulseIn(echo1, HIGH);
-cm1 = lecture_echo1 /58;
+int distance1()
+{
+  digitalWrite(trig1, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig1, LOW);
+  lecture_echo1 = pulseIn(echo1, HIGH);
+  cm1 = lecture_echo1 / 58;
 
-delay(10);
-Serial.print("Distance en cm1 :");
+  delay(10);
+  Serial.print("Distance en cm1 :");
   Serial.println(cm1);
-
 }
 
 //int distance2 (){
@@ -33,7 +34,5 @@ Serial.print("Distance en cm1 :");
 //Serial.println(cm2);
 //delay(1000);
 //Serial.print("Distance en cm 2:");
-  //Serial.println(cm2);
+//Serial.println(cm2);
 //}
-
-    
